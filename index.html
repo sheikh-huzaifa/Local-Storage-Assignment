@@ -22,17 +22,23 @@
                 <button type="button" class="btn btn-light btnStyle my-3 ms-3" onclick="generateUserList()">Generate User List</button>
                 <button type="button" class="btn btn-light btnStyle my-3 ms-3" onclick="btnArea('addUser')">Add User</button>
                 <button type="button" class="btn btn-light btnStyle my-3 ms-3" onclick="btnArea('deleteUser')">Delete User</button>
-                <button type="button" class="btn btn-light btnStyle my-3 ms-3" onclick="btnArea('login')">Login</button>
+                <input type="button" class="btn btn-light btnStyle my-3 ms-3" value="login" id="logInBtn" onclick="btnArea('login')"></input>
             </div>
+            <!-- Add User Form -->
             <div id="addUser" hidden>
                 <div class="input-group mb-5 mt-5 pt-5 pb-5">
                     
-                    <input type="text" class="form-control btnStyle" id="userName" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="ms-3 my-2"><input type="text" class="form-control btnStyle" id="userName" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></div>
+                    <div class="ms-3 mt-2"><input type="text" class="form-control btnStyle" id="userAge" placeholder="Age" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control btnStyle my-2" id="userStudy" placeholder="Study" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <div class="ms-3 my-2"><input type="text" class="form-control btnStyle" id="userPass" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1"></div>
                     <button type="button" class="btn btn-success btnStyle my-3 ms-3" onclick="addUserSuccess()">Add User</button>
                   </div>
                 
             </div>
-
+            <!-- Delete User Form -->
             <div id="deleteUser" hidden>
                 <div class="input-group mb-5 mt-5 pt-5 pb-5">
                     
@@ -41,7 +47,12 @@
                   </div>
                 
             </div>
-
+            <!-- Login Form -->
+            <div id="loginArea" hidden>
+                <input type="text" class="form-control btnStyle my-2" id="loginUser" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control btnStyle my-2" id="loginPass" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            <button type="button" class="btn btn-success btnStyle my-3 ms-3"   onclick="loginUserBtn()">"Login"</button>
+            </div>       
         </div>
     </div>
    </div>
