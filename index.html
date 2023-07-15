@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Local Storage</title>
+  </head>
+  <body>
+   <div class="container-fluid bg-dark text-center">
+    <h3 class="text-white py-3">Local Storage</h3>
+   </div>
+   <div class="container mt-5">
+    <div class="row">
+        <div class="col-6 border border-2 rounded-3 " id="outputArea"></div>
+        <div class="col-4 offset-1 border border-2 rounded-3">
+            <div id="btnArea">
+                <button type="button" class="btn btn-light btnStyle my-3 ms-3" onclick="generateUserList()">Generate User List</button>
+                <button type="button" class="btn btn-light btnStyle my-3 ms-3" onclick="btnArea('addUser')">Add User</button>
+                <button type="button" class="btn btn-light btnStyle my-3 ms-3" onclick="btnArea('deleteUser')">Delete User</button>
+                <button type="button" class="btn btn-light btnStyle my-3 ms-3" onclick="btnArea('login')">Login</button>
+            </div>
+            <div id="addUser" hidden>
+                <div class="input-group mb-5 mt-5 pt-5 pb-5">
+                    
+                    <input type="text" class="form-control btnStyle" id="userName" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    <button type="button" class="btn btn-success btnStyle my-3 ms-3" onclick="addUserSuccess()">Add User</button>
+                  </div>
+                
+            </div>
+
+            <div id="deleteUser" hidden>
+                <div class="input-group mb-5 mt-5 pt-5 pb-5">
+                    
+                    <input type="text" class="form-control btnStyle" id="deleteUserName" placeholder="Username number to delete" aria-label="Username number to delete" aria-describedby="basic-addon1">
+                    <button type="button" class="btn btn-success btnStyle my-3 ms-3" onclick="deleteUserSuccess()">Delete User</button>
+                  </div>
+                
+            </div>
+
+        </div>
+    </div>
+   </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+   <script src="/script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
