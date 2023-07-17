@@ -30,6 +30,9 @@ let addUserSuccess = () => {
     document.getElementById("btnArea").hidden = false;
    document.getElementById("addUser").hidden = true;
    document.getElementById("userName").value="";
+   document.getElementById("userAge").value="";
+   document.getElementById("userStudy").value="";
+   document.getElementById("userPass").value="";
    alert(`SuccessFully Added this user: ${NewUserName}`)
     newUserData.push(NewUserName)
     newUserData.push(newUserAge)
